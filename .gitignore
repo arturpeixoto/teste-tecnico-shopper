@@ -1,0 +1,26 @@
+# Node modules
+node_modules/
+
+# Build outputs
+dist/
+build/
+out/
+
+# Logs
+*.log
+
+# IDE/editor settings
+.idea/
+.vscode/
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+.cache/
+
+# Environment files
+.env
+
+# Coverage reports
+coverage/
