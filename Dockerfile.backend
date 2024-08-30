@@ -1,23 +1,15 @@
-# Use uma imagem base Node.js
 FROM node:20
 
-# Defina o diretório de trabalho
 WORKDIR /app
 
-# Copie os arquivos de dependências
 COPY backend/package*.json ./
 
-# Instale as dependências
 RUN npm install
 
-# Copie o restante do código do backend
 COPY backend/ .
 
-# Compile o TypeScript
 RUN npm run build
 
-# Exponha a porta que o backend vai utilizar
 EXPOSE 3001
 
-# Comando para iniciar o backend
 CMD ["npm", "run", "start"]
