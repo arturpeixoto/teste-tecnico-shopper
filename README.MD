@@ -26,7 +26,7 @@ Para executar o projeto localmente, siga estes passos:
 
 5. Faça as seguintes requisições:
    - GET /upload: Mostra todos os dados salvos no banco de dados. Alterei um pouco o objeto salvo no banco para unificar todos os requerimentos do teste
-   - POST /upload: Realiza o primeiro requisito de analisar a foto e salvar no banco de dados;
+   - POST /upload: Realiza o primeiro requisito de analisar a foto e salvar no banco de dados (já deixei um txt com uma imagem em base64 para facilitar);
    - PATCH /confirm: Realiza o segundo requisito de confirmar as leituras através do body correto;
    - GET /<:customerCode>/list: Realiza o terceiro requisito de listar por customerCode e se houver measureType 'WATER' ou 'GAS';
 
