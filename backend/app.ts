@@ -25,7 +25,7 @@ class App {
       res.header('Access-Control-Allow-Headers', '*');
       next();
     };
-    this.app.use(bodyParser.json({ limit: '50mb' }))
+    this.app.use(bodyParser.json({ limit: '100mb' }))
     this.app.use(express.json());
     this.app.use(accessControl);
   }
